@@ -41,7 +41,7 @@ export default {
 };
 </script>
 
-<style scoped>
+<style scoped lang="scss">
 .application-layout {
   display: block;
   width: 100%;
