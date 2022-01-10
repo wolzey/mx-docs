@@ -3,6 +3,17 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+## [1.1.2](https://github.com/wolzey/mx-docs/compare/create-mx-docs@1.1.1...create-mx-docs@1.1.2) (2022-01-10)
+
+
+### Bug Fixes
+
+* add node-sass capability using sass package ([db7507d](https://github.com/wolzey/mx-docs/commit/db7507d44d213ec66c7999d0b393e52983e3dcff))
+
+
+
+
+
 ## [1.1.1](https://github.com/wolzey/mx-docs/compare/create-mx-docs@1.1.0...create-mx-docs@1.1.1) (2022-01-10)
 
 
