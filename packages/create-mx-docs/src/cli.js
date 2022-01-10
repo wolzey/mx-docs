@@ -9,7 +9,7 @@ const { version } = require("../package.json");
 
 const generator = path.resolve(__dirname, "./");
 
-const cli = cac("create-nuxt-content-docs");
+const cli = cac("create-mx-docs");
 
 cli
   .command("[out-dir]", "Generate in a custom directory or current directory")
@@ -18,7 +18,7 @@ cli
   .action((outDir = ".", cliOptions) => {
     const files = fs.existsSync(outDir) ? fs.readdirSync(outDir) : [];
     // eslint-disable-next-line no-console
-    console.log(chalk`{cyan create-nuxt-content-docs v${version}}`);
+    console.log(chalk`{cyan create-mx-docs v${version}}`);
     if (files.length) {
       // eslint-disable-next-line no-console
       return console.log(
@@ -28,9 +28,7 @@ cli
       );
     }
     // eslint-disable-next-line no-console
-    console.log(
-      chalk`✨  Generating @nuxt/content documentation in {cyan ${outDir}}`
-    );
+    console.log(chalk`✨  Generating MX documentation in {cyan ${outDir}}`);
 
     const { verbose, answers } = cliOptions;
     const logLevel = verbose ? 4 : 2;

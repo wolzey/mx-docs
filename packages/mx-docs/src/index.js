@@ -104,6 +104,12 @@ function themeModule() {
   const { nuxt } = this;
   const { options, hook } = nuxt;
 
+  // Configure `static/ dir
+  options.dir.static = path.resolve(
+    options.rootDir,
+    options.dir.static || "static"
+  );
+
   hook("components:dirs", async (dirs) => {
     const componentsDirPath = path.resolve(nuxt.options.rootDir, "components");
     const componentsDirStat = await fs

@@ -6,7 +6,18 @@
       class="flex items-center justify-between text-lg h-12 mx-auto container"
     >
       <div class="flex items-center">
-        <svg-icon name="logo" width="32px" height="14px" />
+        <img
+          v-if="logo"
+          :src="logo.light"
+          class="h-8 max-w-full light-img dark:hidden"
+          :alt="settings.title"
+        />
+        <img
+          v-if="logo"
+          :src="logo.dark"
+          class="hidden h-8 max-w-full dark:block"
+          :alt="settings.title"
+        />
         <span class="mx-2 block">|</span>
         DOCS
       </div>
@@ -17,3 +28,24 @@
     </div>
   </nav>
 </template>
+
+<script>
+export default {
+  computed: {
+    logo() {
+      if (!this.settings.logo) {
+        return;
+      }
+
+      if (typeof this.settings.logo === "object") {
+        return this.settings.logo;
+      }
+
+      return {
+        light: this.settings.logo,
+        dark: this.settings.logo,
+      };
+    },
+  },
+};
+</script>

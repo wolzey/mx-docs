@@ -1,3 +1,4 @@
+import defu from "defu";
 import { groupBy } from "lodash";
 import Vue from "vue";
 import { isUnset } from "~/support/utils";
@@ -5,6 +6,10 @@ import { isUnset } from "~/support/utils";
 export const state = () => ({
   dark: true,
   categories: {},
+  settings: {
+    title: "MX Docs",
+    filled: false,
+  },
 });
 
 export const mutations = {
@@ -14,6 +19,10 @@ export const mutations = {
 
   SET_CATEGORIES(state, categories) {
     Vue.set(state.categories, this.$i18n.locale, categories);
+  },
+
+  SET_SETTINGS(state, settings) {
+    state.settings = defu({ filled: true }, settings, state.settings);
   },
 };
 
@@ -52,5 +61,27 @@ export const actions = {
   setTheme({ commit }, dark) {
     this.$storage.setLocalStorage("dark", dark);
     commit("SET_DARK", dark);
+  },
+
+  async fetchSettings({ commit }) {
+    try {
+      const {
+        dir,
+        extension,
+        path,
+        slug,
+        to,
+        createdAt,
+        updatedAt,
+        ...settings
+      } = await this.$content("settings").fetch();
+
+      commit("SET_SETTINGS", settings);
+    } catch (e) {
+      // eslint-disable-next-line no-console
+      console.warn(
+        "You can add a `settings.json` file inside the `content/` folder to customize this theme."
+      );
+    }
   },
 };

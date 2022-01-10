@@ -10,7 +10,7 @@ module.exports = {
       {
         name: "title",
         message: "Project title:",
-        default: "Nuxt Content",
+        default: "MX",
       },
       {
         name: "pm",
@@ -43,6 +43,7 @@ module.exports = {
       type: "move",
       patterns: {
         gitignore: ".gitignore",
+        "_package.json": "package.json",
       },
     },
   ],
