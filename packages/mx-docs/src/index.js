@@ -12,6 +12,8 @@ const defaultConfig = {
   // Target: https://go.nuxtjs.dev/config-target
   target: "static",
 
+  transpile: [__dirname],
+
   // Global page headers: https://go.nuxtjs.dev/config-head
   head: {
     title: "MX Docs",
@@ -33,8 +35,7 @@ const defaultConfig = {
   // Plugins to run before rendering page: https://go.nuxtjs.dev/config-plugins
   plugins: ["~/plugins/init"],
 
-  // Auto import components: https://go.nuxtjs.dev/config-components
-  components: true,
+  components: [{ path: "~/components", pathPrefix: false, level: 1 }],
 
   // Modules for dev and build (recommended): https://go.nuxtjs.dev/config-modules
   buildModules: [
