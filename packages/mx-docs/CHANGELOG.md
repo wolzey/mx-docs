@@ -3,6 +3,17 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+## [1.1.6](https://github.com/wolzey/mx-docs/compare/mx-docs@1.1.5...mx-docs@1.1.6) (2022-01-10)
+
+
+### Bug Fixes
+
+* add transpile ([9dcccb8](https://github.com/wolzey/mx-docs/commit/9dcccb87d04ed8b6fdb1092948147bbfdc913853))
+
+
+
+
+
 ## [1.1.5](https://github.com/wolzey/mx-docs/compare/mx-docs@1.1.4...mx-docs@1.1.5) (2022-01-10)
 
 
