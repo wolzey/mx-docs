@@ -10,7 +10,6 @@
   },
   "dependencies": {
     "mx-docs": "^1.0.0",
-    "node-sass": "^7.0.1",
     "nuxt": "^2.15.8"
   }
 }
