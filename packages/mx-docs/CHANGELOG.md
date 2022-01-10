@@ -3,6 +3,17 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+## [1.1.7](https://github.com/wolzey/mx-docs/compare/mx-docs@1.1.6...mx-docs@1.1.7) (2022-01-10)
+
+
+### Bug Fixes
+
+* dependencies and use tailwindcss from nuxt ([fb4d523](https://github.com/wolzey/mx-docs/commit/fb4d523ff3853145545ccde0fccf3d702e3c8462))
+
+
+
+
+
 ## [1.1.6](https://github.com/wolzey/mx-docs/compare/mx-docs@1.1.5...mx-docs@1.1.6) (2022-01-10)
 
 
