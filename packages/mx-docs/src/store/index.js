@@ -30,6 +30,10 @@ export const getters = {
   dark(state) {
     return state.dark;
   },
+
+  settings(state) {
+    return state.settings;
+  },
 };
 
 export const actions = {
