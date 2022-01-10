@@ -93,6 +93,12 @@ function themeModule() {
   const { nuxt } = this;
   const { options, hook } = nuxt;
 
+  // Configure the `content/` dir
+  options.content.dir = path.resolve(
+    options.rootDir,
+    options.content.dir || "content"
+  );
+
   // Configure `static/ dir
   options.dir.static = path.resolve(
     options.rootDir,
