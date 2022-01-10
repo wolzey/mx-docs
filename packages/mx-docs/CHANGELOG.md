@@ -3,6 +3,17 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+# [1.2.0](https://github.com/wolzey/mx-docs/compare/mx-docs@1.1.7...mx-docs@1.2.0) (2022-01-10)
+
+
+### Features
+
+* **mx-docs:** add storage for theme dark mode ([783d59d](https://github.com/wolzey/mx-docs/commit/783d59dd8e7a1097703d82c84940e08a02a1073e))
+
+
+
+
+
 ## [1.1.7](https://github.com/wolzey/mx-docs/compare/mx-docs@1.1.6...mx-docs@1.1.7) (2022-01-10)
 
 
