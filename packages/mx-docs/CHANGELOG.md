@@ -3,6 +3,17 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+## [1.1.1](https://github.com/wolzey/mx-docs/compare/mx-docs@1.1.0...mx-docs@1.1.1) (2022-01-10)
+
+
+### Bug Fixes
+
+* **deps:** missing tailwind dependencies ([308bf05](https://github.com/wolzey/mx-docs/commit/308bf057d8f4685fac997257dabce3ae5ee07f47))
+
+
+
+
+
 # 1.1.0 (2022-01-10)
 
 
