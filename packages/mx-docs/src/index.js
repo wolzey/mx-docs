@@ -6,11 +6,13 @@ import path from "path";
 const fs = gracefulFs.promises;
 
 const defaultConfig = {
+  target: "static",
   // Disable server-side rendering: https://go.nuxtjs.dev/ssr-mode
-  ssr: false,
+  ssr: true,
 
   // Target: https://go.nuxtjs.dev/config-target
   target: "static",
+  srcDir: __dirname,
 
   transpile: [__dirname],
 
@@ -23,24 +25,18 @@ const defaultConfig = {
     meta: [
       { charset: "utf-8" },
       { name: "viewport", content: "width=device-width, initial-scale=1" },
-      { hid: "description", name: "description", content: "" },
-      { name: "format-detection", content: "telephone=no" },
     ],
-    link: [{ rel: "icon", type: "image/x-icon", href: "/favicon.ico" }],
   },
 
-  // Global CSS: https://go.nuxtjs.dev/config-css
-  css: ["~/assets/css/main.css"],
-
   // Plugins to run before rendering page: https://go.nuxtjs.dev/config-plugins
-  plugins: ["~/plugins/init"],
+  plugins: ["@/plugins/init"],
 
   components: [{ path: "~/components", pathPrefix: false, level: 1 }],
 
   // Modules for dev and build (recommended): https://go.nuxtjs.dev/config-modules
   buildModules: [
     themeModule,
-    "@nuxt/postcss8",
+    "@nuxtjs/tailwindcss",
 
     // https://go.nuxtjs.dev/tailwindcss
     "@nuxtjs/google-fonts",
@@ -170,10 +166,13 @@ function themeModule() {
     });
   });
 
-  // Handle user tailwind.config.js
+  // Configure `tailwind.config.js` path
   options.tailwindcss.configPath =
     options.tailwindcss.configPath ||
     path.resolve(options.rootDir, "tailwind.config.js");
+  options.tailwindcss.cssPath =
+    options.tailwindcss.cssPath ||
+    path.resolve(options.rootDir, options.dir.assets, "css", "tailwind.css");
 
   // Configure TailwindCSS
   hook("tailwindcss:config", function (defaultTailwindConfig) {
