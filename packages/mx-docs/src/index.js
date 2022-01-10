@@ -1,6 +1,7 @@
 import defu from "defu";
 import tailwindConfig from "./tailwind.config";
 import gracefulFs from "graceful-fs";
+import path from "path";
 
 const fs = gracefulFs.promises;
 
