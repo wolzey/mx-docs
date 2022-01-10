@@ -65,17 +65,6 @@ const defaultConfig = {
     },
   },
 
-  // Build Configuration: https://go.nuxtjs.dev/config-build
-  build: {
-    postcss: {
-      plugins: {
-        "tailwindcss/nesting": {},
-        tailwindcss: {},
-        autoprefixer: {},
-      },
-    },
-  },
-
   i18n: {
     langDir: "~/i18n",
     locales: [
