@@ -3,6 +3,17 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+## [1.2.2](https://github.com/wolzey/mx-docs/compare/mx-docs@1.2.1...mx-docs@1.2.2) (2022-01-10)
+
+
+### Bug Fixes
+
+* **AppHeader:** add missing getter ([84c3464](https://github.com/wolzey/mx-docs/commit/84c34641b757a132493e5e5ac5ab092f9082dab6))
+
+
+
+
+
 ## [1.2.1](https://github.com/wolzey/mx-docs/compare/mx-docs@1.2.0...mx-docs@1.2.1) (2022-01-10)
 
 
