@@ -28,7 +28,6 @@
     "defu": "^5.0.0",
     "graceful-fs": "^4.2.9",
     "mx-design-tokens": "^10.3.0",
-    "node-sass": "^7.0.1",
     "prism-themes": "^1.9.0",
     "tailwindcss": "^3.0.12"
   }
