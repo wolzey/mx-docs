@@ -3,6 +3,17 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+## [1.1.3](https://github.com/wolzey/mx-docs/compare/mx-docs@1.1.2...mx-docs@1.1.3) (2022-01-10)
+
+
+### Bug Fixes
+
+* add node-sass for main.css ([f33521f](https://github.com/wolzey/mx-docs/commit/f33521fc7fad2ad42b3de97257f552bdc7df5db7))
+
+
+
+
+
 ## [1.1.2](https://github.com/wolzey/mx-docs/compare/mx-docs@1.1.1...mx-docs@1.1.2) (2022-01-10)
 
 
