@@ -3,6 +3,17 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+## [1.1.2](https://github.com/wolzey/mx-docs/compare/mx-docs@1.1.1...mx-docs@1.1.2) (2022-01-10)
+
+
+### Bug Fixes
+
+* missing dependency ([b461967](https://github.com/wolzey/mx-docs/commit/b461967e878935cc720b5241d8ac6e2c6fa9494a))
+
+
+
+
+
 ## [1.1.1](https://github.com/wolzey/mx-docs/compare/mx-docs@1.1.0...mx-docs@1.1.1) (2022-01-10)
 
 
