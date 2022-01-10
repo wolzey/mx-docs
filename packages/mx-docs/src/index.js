@@ -28,8 +28,10 @@ const defaultConfig = {
     ],
   },
 
-  // Plugins to run before rendering page: https://go.nuxtjs.dev/config-plugins
-  plugins: ["@/plugins/init"],
+  plugins: [
+    "@/plugins/init", // Initialize application
+    "@/plugins/storage", // Theme storage
+  ],
 
   components: [{ path: "~/components", pathPrefix: false, level: 1 }],
 
