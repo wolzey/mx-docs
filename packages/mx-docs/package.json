@@ -1,6 +1,6 @@
 {
   "name": "mx-docs",
-  "version": "1.2.2",
+  "version": "1.2.3",
   "description": "Create an MX themed documentation site in seconds",
   "main": "src/",
   "files": [

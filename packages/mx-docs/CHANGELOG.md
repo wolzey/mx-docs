@@ -3,6 +3,17 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+## [1.2.3](https://github.com/wolzey/mx-docs/compare/mx-docs@1.2.2...mx-docs@1.2.3) (2022-01-10)
+
+
+### Bug Fixes
+
+* **docs:** add missing storage plugin ([e0fc62f](https://github.com/wolzey/mx-docs/commit/e0fc62f49d311cbad494c76c957bad12ed3c3194))
+
+
+
+
+
 ## [1.2.2](https://github.com/wolzey/mx-docs/compare/mx-docs@1.2.1...mx-docs@1.2.2) (2022-01-10)
 
 
