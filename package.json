@@ -1,0 +1,17 @@
+{
+  "name": "mx-docs",
+  "private": true,
+  "description": "Easily create your MX styled documentation",
+  "workspaces": [
+    "packages/*"
+  ],
+  "scripts": {
+    "bootstrap": "lerna bootstrap",
+    "release": "lerna publish"
+  },
+  "author": "Ethan Wolz <ethan.wolz@mx.com>",
+  "license": "MIT",
+  "devDependencies": {
+    "lerna": "^4.0.0"
+  }
+}
