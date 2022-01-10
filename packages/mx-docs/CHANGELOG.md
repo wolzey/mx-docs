@@ -1,0 +1,12 @@
+# Change Log
+
+All notable changes to this project will be documented in this file.
+See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
+
+# 1.1.0 (2022-01-10)
+
+
+### Features
+
+* initial commit ([aaa4ea3](https://github.com/wolzey/mx-docs/commit/aaa4ea3680e8b6d71a52b4db62b0c088a2a8eff8))
+* **logos:** use logos from user settings ([9cc158a](https://github.com/wolzey/mx-docs/commit/9cc158a802afdfd0716e46d47e3bf54eb161ead5))
