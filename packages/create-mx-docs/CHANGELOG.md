@@ -3,6 +3,17 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+## [1.1.3](https://github.com/wolzey/mx-docs/compare/create-mx-docs@1.1.2...create-mx-docs@1.1.3) (2022-01-11)
+
+
+### Bug Fixes
+
+* add note to change into created directory ([b613c4b](https://github.com/wolzey/mx-docs/commit/b613c4b25d37c2b0c7f57a2c96727fafe755fe6f))
+
+
+
+
+
 ## [1.1.2](https://github.com/wolzey/mx-docs/compare/create-mx-docs@1.1.1...create-mx-docs@1.1.2) (2022-01-10)
 
 
