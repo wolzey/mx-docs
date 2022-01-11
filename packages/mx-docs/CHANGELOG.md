@@ -3,6 +3,17 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+## [1.2.6](https://github.com/wolzey/mx-docs/compare/mx-docs@1.2.5...mx-docs@1.2.6) (2022-01-11)
+
+
+### Bug Fixes
+
+* **styles:** update styles and add example application for dev ([f291f5b](https://github.com/wolzey/mx-docs/commit/f291f5b086f38e69515c2e7b2bfd2f22fb89e788))
+
+
+
+
+
 ## [1.2.5](https://github.com/wolzey/mx-docs/compare/mx-docs@1.2.4...mx-docs@1.2.5) (2022-01-11)
 
 **Note:** Version bump only for package mx-docs
