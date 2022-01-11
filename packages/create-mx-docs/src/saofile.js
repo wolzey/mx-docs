@@ -1,3 +1,5 @@
+import chalk from "chalk";
+
 module.exports = {
   prompts() {
     return [
@@ -51,5 +53,7 @@ module.exports = {
     this.gitInit();
     await this.npmInstall({ npmClient: this.answers.pm });
     this.showProjectTips();
+
+    console.log(chalk`✨ {cyan cd ${this.outFolder} && yarn dev}`);
   },
 };
