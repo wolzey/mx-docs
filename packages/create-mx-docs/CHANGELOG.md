@@ -3,6 +3,17 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+## [1.1.4](https://github.com/wolzey/mx-docs/compare/create-mx-docs@1.1.3...create-mx-docs@1.1.4) (2022-01-11)
+
+
+### Bug Fixes
+
+* import statement used but not recognized ([b7ae2fe](https://github.com/wolzey/mx-docs/commit/b7ae2fe10e9085f56621da58a40aeb341066397b))
+
+
+
+
+
 ## [1.1.3](https://github.com/wolzey/mx-docs/compare/create-mx-docs@1.1.2...create-mx-docs@1.1.3) (2022-01-11)
 
 
