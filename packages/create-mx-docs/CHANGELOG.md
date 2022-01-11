@@ -3,6 +3,17 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+## [1.1.5](https://github.com/wolzey/mx-docs/compare/create-mx-docs@1.1.4...create-mx-docs@1.1.5) (2022-01-11)
+
+
+### Bug Fixes
+
+* bump the template version in package.json to latest ([e487061](https://github.com/wolzey/mx-docs/commit/e4870611143a755e225e844adbee703c94fb00e3))
+
+
+
+
+
 ## [1.1.4](https://github.com/wolzey/mx-docs/compare/create-mx-docs@1.1.3...create-mx-docs@1.1.4) (2022-01-11)
 
 
