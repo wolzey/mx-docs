@@ -9,13 +9,13 @@
         <img
           v-if="logo"
           :src="logo.light"
-          class="h-8 max-w-full light-img dark:hidden"
+          class="h-6 max-w-full light-img dark:hidden"
           :alt="settings.title"
         />
         <img
           v-if="logo"
           :src="logo.dark"
-          class="hidden h-8 max-w-full dark:block"
+          class="hidden h-6 max-w-full dark:block"
           :alt="settings.title"
         />
         <span class="mx-2 block">|</span>

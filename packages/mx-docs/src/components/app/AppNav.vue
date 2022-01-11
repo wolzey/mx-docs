@@ -1,12 +1,12 @@
 <template>
   <aside
-    class="w-full lg:block mt-16 lg:mt-0 z-30 bg-white dark:bg-gray-900 lg:bg-transparent lg:dark:bg-transparent border-r border-neutral-700 mr-4"
+    class="w-full lg:block mt-16 lg:mt-0 z-30 bg-white dark:bg-gray-900 lg:bg-transparent lg:dark:bg-transparent border-r border-neutral-700 mr-4 pl-4"
     :class="{ block: menu, hidden: !menu }"
   >
     <div
-      class="lg:sticky lg:top-8 overflow-y-auto h-full lg:h-auto lg:max-h-(screen-12) md:px-4 lg:px-0"
+      class="lg:sticky lg:top-8 overflow-y-auto h-full lg:h-auto lg:max-h-(screen-12) lg:px-0"
     >
-      <ul class="p-4 lg:py-8 lg:pl-0 lg:pr-8">
+      <ul class="p-4 lg:py-8 lg:pl-0">
         <li
           v-for="(docs, category, index) in categories"
           :key="category"

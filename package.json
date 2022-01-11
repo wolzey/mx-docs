@@ -7,11 +7,15 @@
   ],
   "scripts": {
     "bootstrap": "lerna bootstrap",
+    "example": "nuxt example",
     "release": "lerna publish"
   },
   "author": "Ethan Wolz <ethan.wolz@mx.com>",
   "license": "MIT",
   "devDependencies": {
     "lerna": "^4.0.0"
+  },
+  "dependencies": {
+    "nuxt-edge": "latest"
   }
 }
