@@ -9,7 +9,7 @@
     "generate": "nuxt generate"
   },
   "dependencies": {
-    "mx-docs": "^1.0.0",
+    "mx-docs": "^1.2.6",
     "nuxt": "^2.15.8"
   }
 }
