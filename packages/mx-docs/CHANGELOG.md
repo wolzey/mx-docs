@@ -3,6 +3,17 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+# [1.3.0](https://github.com/wolzey/mx-docs/compare/mx-docs@1.2.6...mx-docs@1.3.0) (2022-01-18)
+
+
+### Features
+
+* **print:** add print styles for pdf generation ([0c5ce53](https://github.com/wolzey/mx-docs/commit/0c5ce53280dfa3f69dca8b0555e69229d4162b67))
+
+
+
+
+
 ## [1.2.6](https://github.com/wolzey/mx-docs/compare/mx-docs@1.2.5...mx-docs@1.2.6) (2022-01-11)
 
 
