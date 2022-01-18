@@ -30,9 +30,15 @@ module.exports = {
       typography: (theme) => ({
         DEFAULT: {
           css: {
+            b: {
+              color: theme('colors.neutral.900'),
+              fontWeight: 600
+            },
+
             a: {
               color: theme("colors.primary.500"),
             },
+
             h2: {
               paddingBottom: theme("padding.2"),
               borderBottomWidth: "1px",
@@ -89,9 +95,6 @@ module.exports = {
             },
             a: {
               color: theme("colors.primary[500]"),
-            },
-            strong: {
-              color: theme("colors.neutral[100]"),
             },
             "ol > li::before": {
               color: theme("colors.neutral[400]"),
@@ -162,7 +165,7 @@ module.exports = {
 
   plugins: [
     require("@tailwindcss/typography"),
-    plugin(function ({ addVariant, _prefix, e }) {
+    plugin(function ({ addVariant, e }) {
       addVariant("dark-hover", ({ modifySelectors, separator }) => {
         modifySelectors(({ className }) => {
           return `.dark-mode .${e(`dark-hover${separator}${className}`)}:hover`;
@@ -187,15 +190,27 @@ module.exports = {
         },
       });
     }),
+    // Add ability to add print styles
+    plugin(function ({ addVariant, e, postcss }) {
+      addVariant('print', ({ container, separator}) => {
+        const rule = postcss.atRule({ name: 'media', params: 'print' })
+        rule.append(container.nodes)
+        container.append(rule)
+        rule.walkRules(rule => {
+          rule.selector = `.${e(`print${separator}${rule.selector.slice(1)}`)}`
+        })
+      })
+    })
   ],
 
   variants: {
-    margin: ["responsive", "last"],
-    padding: ["responsive", "hover"],
-    backgroundColor: ["responsive", "hover", "focus", "dark"],
-    textColor: ["responsive", "hover", "focus", "dark"],
-    borderColor: ["responsive", "hover", "focus", "dark"],
-    borderWidth: ["responsive", "first", "last"],
-    typography: ["responsive", "dark"],
+    margin: ["responsive", "last", "print"],
+    padding: ["responsive", "hover", "print"],
+    backgroundColor: ["responsive", "hover", "focus", "dark", "print"],
+    textColor: ["responsive", "hover", "focus", "dark", "print"],
+    borderColor: ["responsive", "hover", "focus", "dark", "print"],
+    borderWidth: ["responsive", "first", "last", "print"],
+    typography: ["responsive", "dark", "print"],
+    display: ["print"]
   },
 };

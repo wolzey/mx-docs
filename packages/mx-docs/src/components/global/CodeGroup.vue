@@ -1,7 +1,7 @@
 <template>
   <div class="code-group">
     <div
-      class="rounded-t-md border-b-2 border-gray-700 px-2 bg-gray-800 text-sm text-white relative"
+      class="rounded-t-md border-b-2 border-gray-700 px-2 bg-gray-800 text-sm text-white relative print:bg-gray-800"
     >
       <button
         v-for="({ label }, i) in tabs"

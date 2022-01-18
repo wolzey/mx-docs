@@ -93,6 +93,8 @@ function themeModule() {
   const { nuxt } = this;
   const { options, hook } = nuxt;
 
+  options.css.push('~/assets/css/global.css')
+
   // Configure the `content/` dir
   options.content.dir = path.resolve(
     options.rootDir,

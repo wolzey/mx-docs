@@ -1,12 +1,12 @@
 <template>
   <article
-    class="prose prose-dark px-4 lg:px-0 content-container pb-16 w-full break-words pt-12"
+    class="prose prose-dark px-4 lg:px-0 content-container pb-16 w-full break-words pt-12 print:pt-0 print:text-black"
   >
-    <h1 class="flex items-center justify-between">
+    <h1 class="flex items-center justify-between print:text-black">
       {{ document.title }}
     </h1>
     <div v-if="document.subtitle" class="-mt-4">
-      <p class="text-gray-600 dark:text-gray-400">
+      <p class="text-gray-600 dark:text-gray-400 print:text-gray-900">
         {{ document.subtitle }}
       </p>
     </div>

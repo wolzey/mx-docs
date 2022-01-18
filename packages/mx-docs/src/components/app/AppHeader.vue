@@ -5,7 +5,7 @@
     <div
       class="flex items-center justify-between text-lg h-12 mx-auto container"
     >
-      <div class="flex items-center">
+      <div class="flex items-center dark:text-neutral-100">
         <img
           v-if="logo"
           :src="logo.light"

@@ -1,0 +1,22 @@
+html,
+body {
+  -webkit-print-color-adjust: exact !important;
+}
+
+pre {
+  @media print {
+    @apply bg-gray-800;
+  }
+}
+
+strong {
+  @apply font-semibold;
+
+  @media print {
+    @apply text-neutral-900;
+  }
+}
+
+strong.dark {
+  @apply: text-neutral-100;
+}
