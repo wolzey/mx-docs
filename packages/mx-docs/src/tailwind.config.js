@@ -191,16 +191,7 @@ module.exports = {
       });
     }),
     // Add ability to add print styles
-    plugin(function ({ addVariant, e, postcss }) {
-      addVariant('print', ({ container, separator}) => {
-        const rule = postcss.atRule({ name: 'media', params: 'print' })
-        rule.append(container.nodes)
-        container.append(rule)
-        rule.walkRules(rule => {
-          rule.selector = `.${e(`print${separator}${rule.selector.slice(1)}`)}`
-        })
-      })
-    })
+    require('tailwindcss-print-styles')
   ],
 
   variants: {
