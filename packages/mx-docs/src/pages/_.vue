@@ -5,6 +5,7 @@
     <h1 class="flex items-center justify-between print:text-black">
       {{ document.title }}
     </h1>
+
     <div v-if="document.subtitle" class="-mt-4">
       <p class="text-gray-600 dark:text-gray-400 print:text-gray-900">
         {{ document.subtitle }}

@@ -9,14 +9,14 @@ pre {
   }
 }
 
-strong {
-  @apply font-semibold;
-
-  @media print {
-    @apply text-neutral-900;
-  }
+.dark strong {
+  @apply font-semibold text-neutral-300;
 }
 
-strong.dark {
-  @apply: text-neutral-100;
+strong {
+  @apply text-neutral-900;
+}
+
+.nuxt-content-editor {
+  @apply text-neutral-900;
 }

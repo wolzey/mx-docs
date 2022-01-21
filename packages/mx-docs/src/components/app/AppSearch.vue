@@ -34,7 +34,7 @@
     </div>
     <ul
       v-show="focus && (searching || results.length)"
-      class="z-10 absolute w-full flex-1 top-0 bg-white dark:bg-neutral-700 rounded-md border border-neutral-300 dark:border-neutral-700 overflow-hidden"
+      class="z-10 absolute w-full flex-1 top-0 bg-white dark:bg-neutral-800 dark:text-neutral-300 rounded-md border border-neutral-300 dark:border-neutral-700 overflow-hidden"
       :class="{ 'rounded-t-none': focus && (searching || results.length) }"
       style="margin-top: 37px"
     >
